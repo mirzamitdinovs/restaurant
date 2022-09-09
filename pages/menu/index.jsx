@@ -1,5 +1,11 @@
+import Menu from 'containers/Menu';
+
 const MenuPage = () => {
-	return <div>MenuPage</div>;
+	return (
+		<>
+			<Menu />
+		</>
+	);
 };
 
 export default MenuPage;
