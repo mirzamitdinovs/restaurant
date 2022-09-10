@@ -58,39 +58,6 @@ const Footer = () => {
 								<ul className='list-none text-center mt-6'>
 									<li className='inline'>
 										<a
-											href='https://1.envato.market/techwind'
-											target='_blank'
-											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
-										>
-											<i
-												className='uil uil-shopping-cart align-middle'
-												title='Buy Now'
-											/>
-										</a>
-									</li>
-									<li className='inline'>
-										<a
-											href='https://dribbble.com/shreethemes'
-											target='_blank'
-											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
-										>
-											<i
-												className='uil uil-dribbble align-middle'
-												title='dribbble'
-											/>
-										</a>
-									</li>
-									<li className='inline'>
-										<a
-											href='https://www.behance.net/shreethemes'
-											target='_blank'
-											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
-										>
-											<i className='uil uil-behance' title='Behance' />
-										</a>
-									</li>
-									<li className='inline'>
-										<a
 											href='http://linkedin.com/company/shreethemes'
 											target='_blank'
 											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
@@ -171,15 +138,10 @@ const Footer = () => {
 				<div className='container text-center'>
 					<div className='grid md:grid-cols-1'>
 						<p className='mb-0'>
-							© Techwind. Design with{' '}
-							<i className='mdi mdi-heart text-red-600' /> by{' '}
-							<a
-								href='https://shreethemes.in/'
-								target='_blank'
-								className='text-reset'
-							>
-								Shreethemes
-							</a>
+							© Design with <i className='mdi mdi-heart text-red-600' /> by{' '}
+							<span target='_blank' className='text-reset'>
+								Jalol Rakhimov
+							</span>
 							.
 						</p>
 					</div>

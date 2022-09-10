@@ -4,8 +4,11 @@ import Navbar from 'components/Navbar';
 import Switcher from 'components/Switcher';
 import Head from 'next/head';
 import Script from 'next/script';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import '../styles/globals.css';
 import { ThemeProvider } from 'next-themes';
+
 function MyApp({ Component, pageProps }) {
 	return (
 		<div className='font-nunito text-base text-black dark:text-white dark:bg-slate-900'>
@@ -30,7 +33,6 @@ function MyApp({ Component, pageProps }) {
 
 				<link rel='shortcut icon' href='assets/images/favicon.ico' />
 
-				<link href='assets/libs/tiny-slider/tiny-slider.css' rel='stylesheet' />
 				<link href='assets/libs/tobii/css/tobii.min.css' rel='stylesheet' />
 				<link
 					href='assets/libs/js-datepicker/datepicker.min.css'
@@ -54,13 +56,10 @@ function MyApp({ Component, pageProps }) {
 			</ThemeProvider>
 
 			<Script
-				strategy='afterInteractive'
+				strategy='beforeInteractive'
 				src='assets/libs/feather-icons/feather.min.js'
 			></Script>
-			<Script
-				strategy='afterInteractive'
-				src='assets/libs/tiny-slider/min/tiny-slider.js'
-			></Script>
+
 			<Script
 				strategy='afterInteractive'
 				src='assets/libs/tobii/js/tobii.min.js'
