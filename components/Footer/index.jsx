@@ -60,6 +60,7 @@ const Footer = () => {
 										<a
 											href='http://linkedin.com/company/shreethemes'
 											target='_blank'
+											rel='noopener noreferrer'
 											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
 										>
 											<i className='uil uil-linkedin' title='Linkedin' />
@@ -69,6 +70,7 @@ const Footer = () => {
 										<a
 											href='https://www.facebook.com/shreethemes'
 											target='_blank'
+											rel='noopener noreferrer'
 											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
 										>
 											<i
@@ -81,6 +83,7 @@ const Footer = () => {
 										<a
 											href='https://www.instagram.com/shreethemes/'
 											target='_blank'
+											rel='noopener noreferrer'
 											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
 										>
 											<i
@@ -93,6 +96,7 @@ const Footer = () => {
 										<a
 											href='https://twitter.com/shreethemes'
 											target='_blank'
+											rel='noopener noreferrer'
 											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
 										>
 											<i
@@ -116,6 +120,7 @@ const Footer = () => {
 										<a
 											href='https://forms.gle/QkTueCikDGqJnbky9'
 											target='_blank'
+											rel='noopener noreferrer'
 											className='btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600'
 										>
 											<i

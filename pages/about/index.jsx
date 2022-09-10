@@ -61,7 +61,7 @@ const AboutPage = () => {
 									you need to generate awareness, drive traffic, connect. Dummy
 									text is text that is used in the publishing industry or by web
 									designers to occupy the space which will later be filled with
-									'real' content.
+									real content.
 								</p>
 								<div className='mt-6'>
 									<Link href='/contact'>

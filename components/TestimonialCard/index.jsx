@@ -6,7 +6,7 @@ const TestimonialCard = ({ item }) => {
 			<div className='customer-testi'>
 				<div className='content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900'>
 					<i className='mdi mdi-format-quote-open mdi-48px text-indigo-600' />
-					<p className='text-slate-400'>" {item.text} "</p>
+					<p className='text-slate-400'>{item.text}</p>
 					<div className='list-none mb-0 text-amber-400 mt-3 flex justify-center'>
 						<ReactStars
 							count={5}
