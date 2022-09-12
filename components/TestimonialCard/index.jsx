@@ -1,6 +1,16 @@
+import { useEffect, useState } from 'react';
 import ReactStars from 'react-stars';
 
 const TestimonialCard = ({ item }) => {
+	const [firstTime, setFirstTime] = useState(true);
+
+	useEffect(() => {
+		if (firstTime) {
+			setFirstTime(false);
+		}
+	}, []);
+
+	if (firstTime) return null;
 	return (
 		<div className='tiny-slide text-center'>
 			<div className='customer-testi'>

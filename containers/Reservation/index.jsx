@@ -1,4 +1,35 @@
+import { useForm } from 'react-hook-form';
+
+const times = [
+	'8:00',
+	'8:30',
+	'9:00',
+	'9:30',
+	'10:00',
+	'10:30',
+	'11:00',
+	'11:30',
+	'12:00',
+	'12:30',
+	'13:00',
+	'13:30',
+	'14:00',
+	'14:30',
+	'15:00',
+	'15:30',
+	'16:00',
+	'16:30',
+	'17:00',
+	'17:30',
+	'18:00',
+];
+
 const Reservation = () => {
+	const { register, handleSubmit } = useForm();
+
+	const submit = (data) => {
+		console.log('data: ', data);
+	};
 	return (
 		<section
 			className='relative md:py-24 py-16  bg-no-repeat bg-fixed bg-top'
@@ -24,13 +55,12 @@ const Reservation = () => {
 									your needs
 								</p>
 							</div>
-							<form>
+							<form onSubmit={handleSubmit(submit)}>
 								<div className='grid md:grid-cols-2 gap-4 mt-6'>
 									<div>
 										<label className='font-semibold'>Your Name</label>
 										<input
-											name='name'
-											id='name'
+											{...register('name', { required: true })}
 											type='text'
 											className='form-input mt-2'
 											placeholder='First Name :'
@@ -39,8 +69,7 @@ const Reservation = () => {
 									<div>
 										<label className='font-semibold'>Your Email</label>
 										<input
-											name='email'
-											id='email'
+											{...register('email')}
 											type='email'
 											className='form-input mt-2'
 											placeholder='Your email :'
@@ -49,8 +78,8 @@ const Reservation = () => {
 									<div>
 										<label className='font-semibold'>Phone no.</label>
 										<input
-											name='number'
-											type='number'
+											type='phone'
+											{...register('phone')}
 											id='phone-number'
 											className='form-input mt-2'
 											placeholder='Phone no. :'
@@ -60,40 +89,43 @@ const Reservation = () => {
 										<label className='font-semibold'>Person</label>
 										<input
 											type='number'
+											{...register('qty', {
+												required: true,
+												min: 0,
+												max: 8,
+											})}
 											min={0}
-											autoComplete='off'
-											id='adult'
+											max={8}
 											className='form-input mt-2'
-											required=''
 											placeholder='Person :'
 										/>
 									</div>
 									<div>
 										<label className='font-semibold'>Date</label>
 										<input
-											name='date'
-											type='text'
+											{...register('date', {
+												required: true,
+											})}
+											type='date'
 											className='form-input mt-2 start'
 											placeholder='(ex: mm/ dd/ yy)'
 										/>
 									</div>
 									<div>
 										<label className='font-semibold'>Time</label>
-										<input
-											name='time'
-											type='text'
-											id='input-time'
-											className='form-input mt-2 timepicker'
-											placeholder='(ex: 8:00 p.m)'
-										/>
+										<select {...register('time')} className='form-input mt-2'>
+											{times.map((item, index) => (
+												<option key={index} value={item}>
+													{item}
+												</option>
+											))}
+										</select>
 									</div>
 								</div>
 								{/*end grid*/}
 								<div className='grid grid-cols-1 mt-4'>
 									<input
 										type='submit'
-										id='submit'
-										name='send'
 										className='btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full'
 										defaultValue='Book a table'
 									/>
